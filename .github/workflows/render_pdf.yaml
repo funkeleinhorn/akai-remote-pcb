@@ -3,7 +3,7 @@ name: Export Schematic PDF
 on:
   push:
     paths:
-        - 'akai-remote-pcb.kicad_sch'
+        - 'hardware/akai-remote-pcb.kicad_sch'
   workflow_dispatch:
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
 
       - name: Export schematic to PDF
         run: |
-          kicad-cli sch export pdf akai-remote-pcb.kicad_sch --output akai-remote-pcb.pdf
+          kicad-cli sch export pdf hardware/akai-remote-pcb.kicad_sch --output hardware/akai-remote-pcb.pdf
 
       - name: Commit and push changes
         run: |
@@ -32,7 +32,7 @@ jobs:
           git config user.email "github-actions@github.com"
           
           # Stage the PDF
-          git add akai-remote-pcb.pdf
+          git add hardware/akai-remote-pcb.pdf
           
           # Commit only if there are changes
           if git diff --cached --quiet; then
