@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Funkeleinhorn <git@funkeleinhorn.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 name: pcb_image
 on:
   push:

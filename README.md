@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2025 Funkeleinhorn <git@funkeleinhorn.com>
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Keymatrix
 
 ![Static Badge](https://img.shields.io/badge/-Open_Hardware-white?logo=opensourcehardware&logoColor=blue)
