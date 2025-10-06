@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2025 Funkeleinhorn <git@funkeleinhorn.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config]
+check.allTargets = false
+cargo.target = "riscv32imc-unknown-none-elf"
